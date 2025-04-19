@@ -11,7 +11,7 @@ import SwiftUI
 struct Test_the_data_for_NHL_PlayersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerView()
         }
     }
 }
