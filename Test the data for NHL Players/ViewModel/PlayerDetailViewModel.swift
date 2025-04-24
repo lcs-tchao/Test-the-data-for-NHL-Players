@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-class PlayerViewModelDetail {
+class PlayerDetailViewModel {
     
     // MARK: Stored properties
     
