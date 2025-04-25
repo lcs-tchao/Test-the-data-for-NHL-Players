@@ -92,11 +92,11 @@ class PlayerDetailViewModel {
             // Use the decoder object to convert the raw data
             // into an instance of our Swift data type
             //just the data type is different
-            let decodedData = try decoder.decode([PlayerDetail].self, from: data)
+            let decodedData = try decoder.decode(PlayerDetail.self, from: data)
             
             // If we got here, decoding succeeded,
             // return the instance of our data type
-            self.currentPlayer = decodedData.first!
+            self.currentPlayer = decodedData
             
         } catch {
             
