@@ -16,6 +16,8 @@
 		AF21EBEC2DBA9F5F009AF60F /* Test_the_data_for_NHL_PlayersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21EBE42DBA9F5F009AF60F /* Test_the_data_for_NHL_PlayersApp.swift */; };
 		AF21EBED2DBA9F5F009AF60F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF21EBDB2DBA9F5F009AF60F /* Preview Assets.xcassets */; };
 		AF21EBEE2DBA9F5F009AF60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF21EBE32DBA9F5F009AF60F /* Assets.xcassets */; };
+		AF4156552DC7E9BA00899323 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4156542DC7E9BA00899323 /* Search.swift */; };
+		AF4156592DC7F4BE00899323 /* Player Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4156582DC7F4BE00899323 /* Player Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AF21EBE12DBA9F5F009AF60F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		AF21EBE32DBA9F5F009AF60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF21EBE42DBA9F5F009AF60F /* Test_the_data_for_NHL_PlayersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_the_data_for_NHL_PlayersApp.swift; sourceTree = "<group>"; };
+		AF4156542DC7E9BA00899323 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		AF4156582DC7F4BE00899323 /* Player Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player Search.swift"; sourceTree = "<group>"; };
 		AFAEA7CB2DA02E1300309441 /* Test the data for NHL Players.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test the data for NHL Players.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				AF21EBE42DBA9F5F009AF60F /* Test_the_data_for_NHL_PlayersApp.swift */,
+				AF4156532DC7E99E00899323 /* Fuction */,
 				AF21EBDA2DBA9F5F009AF60F /* Model */,
 				AF21EBDF2DBA9F5F009AF60F /* ViewModel */,
 				AF21EBE22DBA9F5F009AF60F /* Views */,
@@ -88,6 +93,15 @@
 				AF21EBE32DBA9F5F009AF60F /* Assets.xcassets */,
 			);
 			path = "Test the data for NHL Players";
+			sourceTree = "<group>";
+		};
+		AF4156532DC7E99E00899323 /* Fuction */ = {
+			isa = PBXGroup;
+			children = (
+				AF4156542DC7E9BA00899323 /* Search.swift */,
+				AF4156582DC7F4BE00899323 /* Player Search.swift */,
+			);
+			path = Fuction;
 			sourceTree = "<group>";
 		};
 		AFAEA7C22DA02E1300309441 = {
@@ -184,6 +198,8 @@
 				AF21EBE82DBA9F5F009AF60F /* PlayerDetailViewModel.swift in Sources */,
 				AF21EBE92DBA9F5F009AF60F /* PlayerViewModel.swift in Sources */,
 				AF21EBEA2DBA9F5F009AF60F /* PlayerDetailView.swift in Sources */,
+				AF4156552DC7E9BA00899323 /* Search.swift in Sources */,
+				AF4156592DC7F4BE00899323 /* Player Search.swift in Sources */,
 				AF21EBEB2DBA9F5F009AF60F /* PlayerView.swift in Sources */,
 				AF21EBEC2DBA9F5F009AF60F /* Test_the_data_for_NHL_PlayersApp.swift in Sources */,
 			);

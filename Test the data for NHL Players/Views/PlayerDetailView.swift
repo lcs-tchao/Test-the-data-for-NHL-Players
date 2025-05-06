@@ -20,33 +20,33 @@ struct PlayerDetailView: View {
         VStack {
             
             // Show a joke if one exists
-            if let stats = viewModelDetail.currentPlayer {
+            if let currentPlayer = viewModelDetail.currentPlayer {
                 
                 Group {
-//                    Text("Player ID: \(stats.playerId)")
-//                    Text("Team: \(stats.fullTeamName["default"] ?? "Unknown Team")")
-//                    Text("Goals: \(stats.goals)")
-//                    Text("Assists: \(stats.assists)")
-//                    Text("Points: \(stats.points)")
-//                    Text("Games Played: \(stats.gamesPlayed)")
-//                    Text("Goals: \(stats.goals)")
-//                    Text("Assists: \(stats.assists)")
-//                    Text("Points: \(stats.points)")
-//                    Text("Plus/Minus: \(stats.plusMinus)")
-//                    Text("Penalty Minutes: \(stats.pim)")
-//                    Text("Power Play Goals: \(stats.powerPlayGoals)")
-//                    Text("Power Play Points: \(stats.powerPlayPoints)")
-//                    Text("Shorthanded Goals: \(stats.shorthandedGoals)")
-//                    Text("Shorthanded Points: \(stats.shorthandedPoints)")
-//                    Text("Game-Winning Goals: \(stats.gameWinningGoals)")
-//                    Text("Overtime Goals: \(stats.otGoals)")
-//                    Text("Shots: \(stats.shots)")
-//                    Text("Shooting %: \(String(format: "%.2f", stats.shootingPctg * 100))%")
+                    Text(currentPlayer.fullTeamName.english)
+                    Text(currentPlayer.fullTeamName.french)
+                    Text("Assists: \(currentPlayer.featuredStats.regularSeason.career.assists)")
+                    Text("Game Winning Goals: \(currentPlayer.featuredStats.regularSeason.career.gameWinningGoals)")
+                    Text("Games Played: \(currentPlayer.featuredStats.regularSeason.career.gamesPlayed)")
+                    Text("Goals: \(currentPlayer.featuredStats.regularSeason.career.goals)")
+                    Text("Ot Goals: \(currentPlayer.featuredStats.regularSeason.career.otGoals)")
+                    Text("Pim: \(currentPlayer.featuredStats.regularSeason.career.pim)")
+                    Text("Plus Minus: \(currentPlayer.featuredStats.regularSeason.career.plusMinus)")
+                    Text("Points: \(currentPlayer.featuredStats.regularSeason.career.points)")
+                    Text("Power Play Goals: \(currentPlayer.featuredStats.regularSeason.career.powerPlayGoals)")
+                    Text("Power Play Points: \(currentPlayer.featuredStats.regularSeason.career.powerPlayPoints)")
+                    Text("Shooting Percentage: \(currentPlayer.featuredStats.regularSeason.career.shootingPctg)")
+                    Text("Short handed Goals: \(currentPlayer.featuredStats.regularSeason.career.shorthandedGoals)")
+                    Text("Short handed points: \(currentPlayer.featuredStats.regularSeason.career.shorthandedPoints)")
+                    Text("Shots: \(currentPlayer.featuredStats.regularSeason.career.shots)")
+                    
                 }
-                .font(.title)
-                .multilineTextAlignment(.center)
+                    
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                
+                
             }
-           
         }
     }
 }
