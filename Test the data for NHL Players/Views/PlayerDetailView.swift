@@ -10,8 +10,7 @@ import SwiftUI
 struct PlayerDetailView: View {
     
     // MARK: Stored properties
-    
-    // Create the view model (temporarily show the default joke)
+    let player: Player
     @State var viewModelDetail = PlayerDetailViewModel()
     
     
@@ -48,9 +47,35 @@ struct PlayerDetailView: View {
                 
             }
         }
+        .task {
+                   await viewModelDetail.fetchPlayer(for: player.playerId)
+               }
     }
 }
 
 #Preview {
-    PlayerDetailView()
+    let samplePlayer = Player(
+        playerId: "8478402", // Example: Connor McDavid
+        name: "Connor McDavid",
+        positionCode: "C",
+        teamId: "22",
+        teamAbbre: "EDM",
+        lastTeamId: nil,
+        lastTeamAbbre: nil,
+        lastSeasonId: nil,
+        sweaterNumber: 97,
+        active: true,
+        height: "6'1\"",
+        heightInInches: 73,
+        heightInCentimeters: 185,
+        weightInPounds: 193,
+        weightInKilograms: 88,
+        birthCity: "Richmond Hill",
+        birthStateProvince: "ON",
+        birthCountry: "Canada"
+    )
+
+    return NavigationView {
+        PlayerDetailView(player: samplePlayer)
+    }
 }

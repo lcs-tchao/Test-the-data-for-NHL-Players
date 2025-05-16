@@ -14,9 +14,14 @@ struct PlayerView: View {
     @State var viewModel = PlayerViewModel()
 
     var body: some View {
+        
+
+        
         NavigationView {
             List(viewModel.filteredPlayers) { player in
-                Text(player.name)
+                NavigationLink(destination: PlayerDetailView(player: player)){ Text(player.name)}
+                    
+                
             }
             .navigationTitle("NHL Players")
             .searchable(text: $viewModel.searchText)
@@ -24,6 +29,7 @@ struct PlayerView: View {
             .onChange(of: viewModel.searchText) { oldValue, newValue in
                 Task {
                     await viewModel.fetchPlayer(playerName: viewModel.searchText)
+                
                 }
             }
         }
