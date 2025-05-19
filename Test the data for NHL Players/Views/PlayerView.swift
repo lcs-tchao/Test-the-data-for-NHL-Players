@@ -19,7 +19,7 @@ struct PlayerView: View {
         
         NavigationView {
             List(viewModel.filteredPlayers) { player in
-                NavigationLink(destination: PlayerDetailView(player: player)){ Text(player.name)}
+                NavigationLink(destination: PlayerInterfaceView(player: player)){ Text(player.name)}
                     
                 
             }
